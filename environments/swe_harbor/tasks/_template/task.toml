@@ -1,0 +1,18 @@
+version = "1.0"
+
+[metadata]
+# TODO: Fill in your details
+author_name = ""
+author_email = ""
+difficulty = "easy"        # easy | medium | hard
+category = "programming"
+tags = []                  # e.g. ["python", "data-structures"]
+
+[verifier]
+timeout_sec = 120.0
+
+[agent]
+timeout_sec = 300.0
+
+[environment]
+docker_image = "python:3.11-slim"
