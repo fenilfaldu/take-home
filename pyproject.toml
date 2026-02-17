@@ -127,9 +127,7 @@ path = "verifiers/__init__.py"
 [tool.hatch.build.targets.sdist]
 include = [
     "/verifiers",
-    "/tests",
     "/README.md",
-    "/LICENSE",
 ]
 exclude = [
     "/wandb",
