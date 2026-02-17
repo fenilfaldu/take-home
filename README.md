@@ -18,6 +18,7 @@ take-home/
 │       ├── RUBRIC.md       # How your work will be evaluated
 │       └── tasks/          # ← Where you create tasks
 │           ├── _template/              # Starter template to copy
+│           ├── fix-dotenv-parser/      # Debug: fix a .env file parser
 │           ├── implement-linked-list/  # Example: greenfield implementation
 │           ├── fix-flask-api/          # Example: debug existing code
 │           └── implement-text-stats/   # Example: text analysis task
@@ -65,10 +66,11 @@ See [`environments/swe_harbor/RUBRIC.md`](environments/swe_harbor/RUBRIC.md) for
 
 ### Getting Started
 
-1. **Study the examples** — `environments/swe_harbor/tasks/implement-linked-list/` (greenfield), `environments/swe_harbor/tasks/fix-flask-api/` (debugging), and `environments/swe_harbor/tasks/implement-text-stats/` (text analysis)
-2. **Copy the template** — `cp -r environments/swe_harbor/tasks/_template environments/swe_harbor/tasks/your-task-name`
-3. **Fill in each file** — follow the TODO comments in the template
-4. **Test locally** — verify your task end-to-end with Docker (see below)
+1. **Fork this repo** — click "Fork" on GitHub, then clone your fork
+2. **Study the examples** — `environments/swe_harbor/tasks/implement-linked-list/` (greenfield), `environments/swe_harbor/tasks/fix-flask-api/` (debugging), and `environments/swe_harbor/tasks/implement-text-stats/` (text analysis)
+3. **Copy the template** — `cp -r environments/swe_harbor/tasks/_template environments/swe_harbor/tasks/your-task-name`
+4. **Fill in each file** — follow the TODO comments in the template
+5. **Test locally** — verify your task end-to-end with Docker (see below)
 
 ### Task Design Guidelines
 
@@ -176,7 +178,7 @@ prime env install swe_harbor --path ./environments/swe_harbor
 prime eval run swe_harbor -m gpt-4
 ```
 
-This spins up the full agent loop: the model reads `instruction.md`, uses its tools to solve the task, and then tests are run automatically. You need a configured API endpoint (see `configs/endpoints.toml` at the repo root).
+This spins up the full agent loop: the model reads `instruction.md`, uses its tools to solve the task, and then tests are run automatically.
 
 ## Harbor Format Reference
 

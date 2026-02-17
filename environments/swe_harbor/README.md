@@ -18,6 +18,7 @@ take-home/
 │       ├── RUBRIC.md       # How your work will be evaluated
 │       └── tasks/          # ← Where you create tasks
 │           ├── _template/              # Starter template to copy
+│           ├── fix-dotenv-parser/      # Debug: fix a .env file parser
 │           ├── implement-linked-list/  # Example: greenfield implementation
 │           ├── fix-flask-api/          # Example: debug existing code
 │           └── implement-text-stats/   # Example: text analysis task
@@ -172,7 +173,7 @@ prime env install swe_harbor --path ./environments/swe_harbor
 prime eval run swe_harbor -m gpt-4
 ```
 
-This spins up the full agent loop: the model reads `instruction.md`, uses its tools to solve the task, and then tests are run automatically. You need a configured API endpoint (see `configs/endpoints.toml` at the repo root).
+This spins up the full agent loop: the model reads `instruction.md`, uses its tools to solve the task, and then tests are run automatically.
 
 ## Harbor Format Reference
 
