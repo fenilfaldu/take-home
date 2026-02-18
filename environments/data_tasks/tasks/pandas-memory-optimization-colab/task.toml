@@ -1,0 +1,20 @@
+version = "1.0"
+
+[metadata]
+difficulty = "hard"
+category = "colab"
+tags = [ "python", "pandas", "memory-optimization", "data-processing", "performance", "jupyter", "notebook"]
+custom_docker_compose = true
+
+[verifier]
+timeout_sec = 600.0
+
+[agent]
+timeout_sec = 600.0
+
+[environment]
+docker_image = "python:3.11-slim"
+build_timeout_sec = 600.0
+cpus = 1
+memory_mb = 2048
+storage_mb = 10240

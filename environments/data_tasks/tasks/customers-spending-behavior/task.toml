@@ -1,0 +1,19 @@
+version = "1.0"
+
+[metadata]
+difficulty = "medium"
+category = "colab"
+tags = ["data-analysis", "python", "visualizations", "statistics"]
+
+[verifier]
+timeout_sec = 600.0
+
+[agent]
+timeout_sec = 600.0
+
+[environment]
+docker_image = "python:3.11-slim"
+build_timeout_sec = 600.0
+cpus = 1
+memory_mb = 2048
+storage_mb = 10240
